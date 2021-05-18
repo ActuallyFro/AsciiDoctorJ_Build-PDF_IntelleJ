@@ -69,4 +69,5 @@ MUST
 ----
 1. Install Git + TMUX
 2. git config --global init.defaultBranch master
-
+3. git config --global user.email 
+4. "actuallyfro@github.com" git config --global user.name "actuallyfro"
