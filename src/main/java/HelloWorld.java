@@ -35,7 +35,8 @@ class HelloWorld {
         //Attributes attributes = Attributes.builder().backend("docbook").icons("font").build(); //COMPLETELY GUESSING!!!
 
         //Baeldung -- "We'll set the in_place option to true so that our file is automatically generated and saved to the file system:"
-        Attributes attributes = Attributes.builder().backend("html").build(); //.icons("font").build(); //COMPLETELY GUESSING!!!
+        //Attributes attributes = Attributes.builder().backend("html").build(); //.icons("font").build(); //Works!
+        Attributes attributes = Attributes.builder().backend("pdf").build(); //.icons("font").build();
         Options options = Options.builder().inPlace(true).attributes(attributes).build(); //COMPLETELY GUESSING!!!
 
         //String output = asciidoctor.convertFile(new File("basic-example.adoc"), new HashMap<String, Object>());
