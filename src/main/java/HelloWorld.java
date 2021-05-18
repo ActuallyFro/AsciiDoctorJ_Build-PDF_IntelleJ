@@ -8,7 +8,7 @@ import org.asciidoctor.Asciidoctor;
 import org.asciidoctor.Attributes;
 import org.asciidoctor.Options;
 
-import javax.xml.stream.events.Attribute;
+//import javax.xml.stream.events.Attribute;
 import java.io.File; //https://www.geeksforgeeks.org/file-class-in-java/
 import java.util.HashMap; //https://www.w3schools.com/java/java_hashmap.asp
 
@@ -36,8 +36,12 @@ class HelloWorld {
 
         //Baeldung -- "We'll set the in_place option to true so that our file is automatically generated and saved to the file system:"
         //Attributes attributes = Attributes.builder().backend("html").build(); //.icons("font").build(); //Works!
-        Attributes attributes = Attributes.builder().backend("pdf").build(); //.icons("font").build();
-        Options options = Options.builder().inPlace(true).attributes(attributes).build(); //COMPLETELY GUESSING!!!
+        Attributes attributes = Attributes.builder().icons("font").build(); //.build();
+
+        //TODO: THIS: https://github.com/asciidoctor/asciidoctorj-pdf/issues/7#issuecomment-324979355 says pdf's CANT be a backend...
+
+        //Attributes attributes = Attributes.builder().backend("coderay").icons("font").build(); //https://github.com/asciidoctor/asciidoctor-maven-examples/blob/main/asciidoctor-pdf-example/pom.xml
+        Options options = Options.builder().inPlace(true).backend("pdf").attributes(attributes).build(); //COMPLETELY GUESSING!!!
 
         //String output = asciidoctor.convertFile(new File("basic-example.adoc"), new HashMap<String, Object>());
         //String output = asciidoctor.convertFile(new File("basic-example.adoc"), options); //Attempt from the Docs pages
