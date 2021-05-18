@@ -1,6 +1,8 @@
 // https://www.programiz.com/java-programming/hello-world -- Your First Program
 // Merged with: https://www.baeldung.com/asciidoctor
 
+//Other example -- https://github.com/asciidoctor/asciidoctorj#running-asciidoctorj-on-wildfly-as
+
 import static org.asciidoctor.Asciidoctor.Factory.create;
 import org.asciidoctor.Asciidoctor;
 import org.asciidoctor.Attributes;
@@ -30,12 +32,32 @@ class HelloWorld {
         //https://docs.asciidoctor.org/asciidoctorj/latest/conversion-examples DEPRICATED!
         //Map<String, Object> attributes = Attributes.builder().backend("docbook").icons("font").asMap();
         //Map<String, Object> options = Options.builder().inPlace(true).attributes(attributes).asMap();
-        Attributes attributes = Attributes.builder().backend("docbook").icons("font").build(); //COMPLETELY GUESSING!!!
+        //Attributes attributes = Attributes.builder().backend("docbook").icons("font").build(); //COMPLETELY GUESSING!!!
+
+        //Baeldung -- "We'll set the in_place option to true so that our file is automatically generated and saved to the file system:"
+        Attributes attributes = Attributes.builder().backend("pdf").build(); //.icons("font").build(); //COMPLETELY GUESSING!!!
         Options options = Options.builder().inPlace(true).attributes(attributes).build(); //COMPLETELY GUESSING!!!
 
         //String output = asciidoctor.convertFile(new File("basic-example.adoc"), new HashMap<String, Object>());
         //String output = asciidoctor.convertFile(new File("basic-example.adoc"), options); //Attempt from the Docs pages
         String output = asciidoctor.convertFile(new File("basic-example.adoc"), options); //COMPLETELY GUESSING!!!
+
+        //TODO: Multi-file generation!
+        // From Baeldun page:
+        //        For converting multiple files, the convertFiles method accepts List object as a first parameter and returns arrays of String objects.
+        //                More interesting is how to convert a whole directory with AsciidoctorJ.
+        //
+        //        As mentioned above, to convert a whole directory – we should call the convertDirectory method. This scans the provided path and searches for all files with AsciiDoc extensions (.adoc, .ad, .asciidoc, .asc) and converts them. To scan all files, an instance of the DirectoryWalker should be provided to the method.
+        //
+        //        Currently, Asciidoctor provides two built-in implementations of mentioned interface:
+        //
+        //        AsciiDocDirectoryWalker – converts all files of given folder and its subfolders. Ignores all files starting with “_”
+        //        GlobDirectoryWalker – convert all files of given folder following a glob expression
+        //
+        //        String[] result = asciidoctor.convertDirectory(
+        //                new AsciiDocDirectoryWalker("src/asciidoc"),
+        //                new HashMap<String, Object>());
+
 
     }
 

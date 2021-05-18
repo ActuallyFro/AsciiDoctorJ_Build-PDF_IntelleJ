@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>Document Title</title>
+<author>
+<personname>
+<firstname>Doc</firstname>
+<surname>Writer</surname>
+</personname>
+<email>doc@example.com</email>
+</author>
+<authorinitials>DW</authorinitials>
+</info>
+<simpara>An example of a basic <link xl:href="http://asciidoc.org">AsciiDoc</link> document prepared by Doc Writer.</simpara>
+<section xml:id="_introduction">
+<title>Introduction</title>
+<simpara>A paragraph followed by an unordered list<footnote><simpara>AsciiDoc supports unordered, ordered, and description lists.</simpara></footnote> with square bullets.<footnote><simpara>You may choose from square, disc, and circle for the bullet style.</simpara></footnote></simpara>
+<itemizedlist mark="square">
+<listitem>
+<simpara>item 1</simpara>
+</listitem>
+<listitem>
+<simpara>item 2</simpara>
+</listitem>
+<listitem>
+<simpara>item 3</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_main">
+<title>Main</title>
+<simpara>Here&#8217;s how you say <quote>Hello, World!</quote> in Prawn:</simpara>
+<formalpara>
+<title>Create a basic PDF document using Prawn</title>
+<para>
+<programlisting language="ruby" linenumbering="unnumbered">require 'prawn'
+
+Prawn::Document.generate 'example.pdf' do
+  text 'Hello, World!'
+end</programlisting>
+</para>
+</formalpara>
+</section>
+<section xml:id="_conclusion">
+<title>Conclusion</title>
+<simpara>That&#8217;s all, folks!</simpara>
+</section>
+</article>
