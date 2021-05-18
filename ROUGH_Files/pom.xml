@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.EFHSOCK</groupId>
+    <artifactId>Example_AsciiDoctorJ</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.asciidoctor</groupId>
+            <artifactId>asciidoctorj</artifactId>
+            <version>2.5.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.asciidoctor</groupId>
+            <artifactId>asciidoctorj-pdf</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>org.jruby</groupId>-->
+<!--            <artifactId>jruby</artifactId>-->
+<!--            <version>9.2.17.0</version>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>org.asciidoctor</groupId>-->
+<!--            <artifactId>asciidoctor-maven-plugin</artifactId>-->
+<!--            <version>2.1.0</version>-->
+<!--        </dependency>-->
+
+    </dependencies>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+
+<!--    https://github.com/asciidoctor/asciidoctor-maven-examples/blob/main/asciidoctor-pdf-example/pom.xml-->
+<!-- SO the examples from Baeldung give an example, but the ASCIIDoctorJ on GitHub give a much BETTER example... https://github.com/asciidoctor/asciidoctor-maven-examples/blob/main/asciidoctor-pdf-example/pom.xml -->
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.asciidoctor</groupId>-->
+<!--                <artifactId>asciidoctor-maven-plugin</artifactId>-->
+<!--                <version>2.5.1</version>-->
+<!--                <dependencies>-->
+<!--                    <dependency>-->
+<!--                        <groupId>org.asciidoctor</groupId>-->
+<!--                        <artifactId>asciidoctorj-pdf</artifactId>-->
+<!--                        <version>1.5.4</version>-->
+<!--                    </dependency>-->
+<!--                </dependencies>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
+</project>
