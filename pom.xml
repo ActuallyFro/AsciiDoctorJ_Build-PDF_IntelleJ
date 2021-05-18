@@ -21,18 +21,6 @@
             <version>1.6.0</version>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>org.jruby</groupId>-->
-<!--            <artifactId>jruby</artifactId>-->
-<!--            <version>9.2.17.0</version>-->
-<!--        </dependency>-->
-
-<!--        <dependency>-->
-<!--            <groupId>org.asciidoctor</groupId>-->
-<!--            <artifactId>asciidoctor-maven-plugin</artifactId>-->
-<!--            <version>2.1.0</version>-->
-<!--        </dependency>-->
-
     </dependencies>
 
     <properties>
@@ -40,23 +28,4 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
-
-<!--    https://github.com/asciidoctor/asciidoctor-maven-examples/blob/main/asciidoctor-pdf-example/pom.xml-->
-<!-- SO the examples from Baeldung give an example, but the ASCIIDoctorJ on GitHub give a much BETTER example... https://github.com/asciidoctor/asciidoctor-maven-examples/blob/main/asciidoctor-pdf-example/pom.xml -->
-<!--    <build>-->
-<!--        <plugins>-->
-<!--            <plugin>-->
-<!--                <groupId>org.asciidoctor</groupId>-->
-<!--                <artifactId>asciidoctor-maven-plugin</artifactId>-->
-<!--                <version>2.5.1</version>-->
-<!--                <dependencies>-->
-<!--                    <dependency>-->
-<!--                        <groupId>org.asciidoctor</groupId>-->
-<!--                        <artifactId>asciidoctorj-pdf</artifactId>-->
-<!--                        <version>1.5.4</version>-->
-<!--                    </dependency>-->
-<!--                </dependencies>-->
-<!--            </plugin>-->
-<!--        </plugins>-->
-<!--    </build>-->
 </project>
