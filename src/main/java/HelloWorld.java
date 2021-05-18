@@ -3,6 +3,7 @@
 
 import static org.asciidoctor.Asciidoctor.Factory.create;
 import org.asciidoctor.Asciidoctor;
+import java.io.File; //https://www.geeksforgeeks.org/file-class-in-java/
 
 class HelloWorld {
     public static void main(String[] args) {
@@ -16,10 +17,11 @@ class HelloWorld {
         // //With retrieved instance, we can convert AsciiDoc document very easily:
         // String output = asciidoctor.convert("Hello _Baeldung_!", new HashMap<String, Object>());
 
-        //https://raw.githubusercontent.com/asciidoctor/asciidoctor-pdf/main/examples/basic-example.adoc
         //String output = asciidoctor.convertFile(new File("baeldung.adoc"), new HashMap<String, Object>());
 
-        //TODO: String output = asciidoctor.convertFile(new File("asic-example.adoc"), new HashMap<String, Object>());
+        //https://raw.githubusercontent.com/asciidoctor/asciidoctor-pdf/main/examples/basic-example.adoc
+        String output = asciidoctor.convertFile(new File("basic-example.adoc"), new HashMap<String, Object>());
+
     }
 
 }
