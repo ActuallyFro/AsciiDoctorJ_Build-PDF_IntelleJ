@@ -36,3 +36,7 @@ On a Clean Ubuntu
 1. git config --global init.defaultBranch master
 2. git config --global user.email "actuallyfro@github.com" 
 3. git config --global user.name "actuallyfro"
+
+Build to Jar
+------------
+https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html#package
