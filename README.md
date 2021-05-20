@@ -16,9 +16,10 @@ Websites:
 4. https://search.maven.org/classic/#search%7Cga%7C1%7Cg%3A%22org.asciidoctor%22 [Maven repo/versions]
 5. https://search.maven.org/classic/#search%7Cgav%7C1%7Cg%3A%22org.asciidoctor%22%20AND%20a%3A%22asciidoctorj-pdf%22 [Maven repo/versions]
 
-The AsciiDoc Example Source
+The AsciiDoc Example Sources
 ---------------------------
 1. https://raw.githubusercontent.com/asciidoctor/asciidoctor-pdf/main/examples/basic-example.adoc
+2. https://github.com/asciidoctor/docgist/blob/master/gists/example.adoc
 
 Pro Tips
 --------
